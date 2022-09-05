@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            //Find the Length of a word
+            function len(text) {
+                var length = 0;
+                while (text[length]!==undefined)
+                    length++;
+                    return length;
+            }
+            console.log(len("Emmanuel Forson Owusu"));
+
+
+            // Make the first letter of a word capital
+            function capFirstLetter(input){
+                return input.charAt(0).toUpperCase() + input.slice(1);
+            }
+            console.log(capFirstLetter("emmanuel"));
+
+            // The first letter of each word capital
+            function EachFirstLetterCap(word) {
+                var words = word.split(/\s+/)
+                for(var i=0; i<words.length; i++) 
+                    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+                return words.join(" ");
+            }
+            console.log(EachFirstLetterCap('god, heaven, earth'));
+        </script>
+    </body>
+</html>
+    
